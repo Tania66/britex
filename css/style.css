@@ -1,0 +1,569 @@
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+body {
+   
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+button{
+    cursor: pointer;
+    border-style: none;
+}
+
+
+.container{
+padding: 0 15px;    
+}
+   
+
+@media screen and (min-width: 320px){
+    .container{
+     width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+ }
+
+
+ @media screen and (min-width: 575px){
+    .container{
+     width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+ }
+
+ @media screen and (min-width: 768px){
+    .container{
+     width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+   
+    }
+ }
+
+ @media screen and (min-width: 992px){
+    .container{
+     width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
+ }
+
+ @media screen and (min-width: 1600px){
+    .container{
+     width: 1368px;
+      margin-left: auto;
+      margin-right: auto;
+  
+    }
+ }
+
+
+
+ @media screen and  (max-width:991px) {
+
+.header-menu{
+    display: none;
+}
+
+.btn-style{
+    display: none;
+}
+
+
+.mobile-menu-open-btn{
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 0;
+        background-color: transparent;
+        border: none;
+    
+    }
+
+    .mobile-menu{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #E5E5E5;;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+        0px 1px 1px rgba(46, 47, 66, 0.16), 
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+       
+    }
+
+    .mobile-menu.is-open{
+        opacity: 6;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(0);
+    }
+
+    .mobile-container{
+        position: relative;
+        padding: 90px 0 40px 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+      
+    }
+
+    .mobile-menu-close-btn{
+        position: absolute;
+        top: 45px;
+        right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    padding: 0;
+   
+    }
+
+    .mobile-menu-close-icon{
+        fill: #263238;
+         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+.mobile-item:not(:last-child){
+    margin-bottom: 40px;
+}
+
+    .menu-list-link {
+        font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #263238;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+ }
+
+
+ .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 8px;
+ }
+
+
+ .logo{
+    
+    font-weight: 400;
+    font-size: 36px;
+    line-height: calc(54/36);
+    color: #000000;
+}
+
+.logo-part{
+    color: #939393;
+}
+
+
+/*HERO*/
+
+.hero-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.hero-content{
+    margin-top: 16px;
+    margin-bottom: 53px;
+}
+
+.hero-title{
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.hero-text{
+    font-weight: 400;
+font-size: 11px;
+line-height: 1.5;
+text-align: center;
+color: #8F95A5;
+margin-bottom: 33px;
+}
+
+
+.hero-btn{
+background: #263238;
+border-radius: 5px;
+padding: 18px 99px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+color: #FFFFFF;
+margin: 0 auto;
+}
+
+
+
+/*SLILLS*/
+
+
+.skills-container{
+    padding-bottom: 50px;
+}
+
+
+
+.skills-title{
+text-align: center;
+margin-bottom: 32px;    
+font-size: 24px;
+line-height: 3.33;
+color: #000000;
+}
+
+.skills-list{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+.skills-card-item{
+    background: #E5E5E5;
+    border-radius: 5px;
+    }
+
+.skills-item-1{
+    padding: 8px 16px 45px 16px;
+}
+
+.skills-item-2{
+    padding: 16px 16px 44px 16px;
+}
+
+.skills-item-3{
+   padding: 29px 16px 44px 16px;
+}
+
+.skills-item-4{
+   padding: 33px 16px 57px 16px;
+ }
+
+
+.sub-title{
+font-size: 18px;
+line-height: 4.44;
+color: #263238;
+
+} 
+
+.sub-content{
+    font-weight: 400;
+font-size: 13px;
+line-height: 1.53;
+color: #8F95A5;
+margin-bottom: 40px;
+}
+
+
+.btn-skills{
+    background: #263238;
+border-radius: 5px;
+padding: 14px 43px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.5;
+color: #FFFFFF;
+}
+
+
+
+/*ABOUT-US*/
+
+.about-us{
+    padding-bottom: 84px;
+}
+
+.about-us-container{
+    display: flex;
+    flex-direction:column-reverse ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about-title{
+font-size: 24px;
+line-height: 3.33;
+color: #000000;
+text-align: center;
+margin-bottom: 24px;
+}
+
+
+.about-desc{
+font-weight: 400;
+font-size: 11px;
+line-height: 1.5;
+text-align: center;
+color: #8F95A5;
+margin-bottom: 43px;
+}
+
+.about-img{
+    margin-bottom: 23px;
+}
+
+.about-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.about-amount{
+    font-size: 24px;
+line-height: 2;
+color: #2A3246;
+text-align: center;
+}
+
+.about-info{
+font-weight: 400;
+font-size: 13px;
+line-height: 1.5;
+text-align: center;
+color: #8F95A5;
+
+}
+
+/**PRICING**/
+
+.pricing{
+    padding-bottom: 72px;
+}
+
+
+
+.pricing-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.pricing-item:not(:last-child){
+    margin-bottom: 65px;
+}
+
+
+.pricing-title{
+margin-bottom: 49px;
+font-size: 24px;
+line-height: 3.33;
+text-align: center;
+color: #000000;
+}
+
+.pricing-suptitle{
+    font-size: 18px;
+line-height: 1.56;
+color: #263238;
+margin-top: 12px;
+margin-bottom: 15px;
+text-align: center;
+}
+
+.pricing-text{
+    margin-bottom: 31px;
+}
+
+.pricing-info{
+    display: inline-flex;
+  align-items: center;
+    gap: 21px;
+    background: #EEEEEE;
+border-radius: 5px;
+padding: 5px 15px 5px 12px;
+   
+}
+
+.price{
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.5;
+color: #263238;
+
+}
+
+.pricing-desc{
+ font-weight: 400;
+font-size: 14px;
+line-height: 1.5;
+color: #546269;   
+}
+
+
+
+.contacts{
+    padding-bottom: 55px;
+}
+
+.contact-title{
+    font-size: 24px;
+line-height: 3.33;
+color: #000000;
+text-align: center;
+margin-bottom: 38px;
+}
+
+.contacts-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-img{
+    margin-bottom: 38px;
+
+}
+
+.contact-info{
+    font-size: 14px;
+    margin-bottom: 31px;
+}
+
+
+.contacts-form{
+    width: 100%;
+}
+
+.contacts-input{
+    height: 50px;
+    width: 100%;
+    border: 1px solid #8F95A5;
+border-radius: 5px;
+padding: 16px 0 16px 26px;
+margin-bottom: 17px;
+
+}
+
+.contacts-input::placeholder{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.5;
+color: #8F95A5;    
+}
+
+.contacts-btn{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.5;
+color: #FFFFFF;
+background: #263238;
+border-radius: 5px;
+padding: 20px 109px 19px 110px;
+text-align: center;
+display: block;
+}
+
+
+/*FOOTER*/
+
+.footer{
+    padding-bottom: 48px;
+
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       border-top: 1px solid #C4C4C4; 
+       margin-bottom: 26px;
+}
+
+.footer-logo{
+    margin-top: 26px;
+    margin-bottom: 15px;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+
+.footer-link{
+font-weight: 500;
+font-size: 11px;
+line-height: 16px;
+color: #8F95A5;
+
+}
+
+.footer-link::after{
+    content: "";
+    background: #8F95A5;
+    width: 4px;
+    height:4px;
+    border-radius: 50%;
+   margin: 1px;
+    display: inline-block;
+}
